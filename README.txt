@@ -5,6 +5,9 @@ Facebook投稿ビューア（オフライン）
 2) FacebookエクスポートのZIPを選択します（複数可）。
 3) 「解析開始」を押します。
 
+配布用ZIP
+- 同じフォルダにある fb-posts-viewer.zip から一式をダウンロードできます。
+
 対応形式（現状のルール）
 - ZIP内の your_facebook_activity/posts/ または
   this_profile's_activity_across_facebook/posts/ 配下の .json を対象。

@@ -621,6 +621,7 @@ function renderDetail(post) {
     elements.detailMedia.innerHTML = "";
     elements.detailText.textContent = "";
     elements.detailLink.innerHTML = "";
+    elements.detailLink.classList.add("hidden");
     return;
   }
   const date = new Date(post.createdAt);
@@ -654,8 +655,9 @@ function renderDetail(post) {
     link.rel = "noopener";
     link.textContent = "リンクを開く";
     elements.detailLink.appendChild(link);
+    elements.detailLink.classList.remove("hidden");
   } else {
-    elements.detailLink.textContent = "リンクなし";
+    elements.detailLink.classList.add("hidden");
   }
 }
 
